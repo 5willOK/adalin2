@@ -1,9 +1,4 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-//注册scrolltriger
 gsap.registerPlugin(ScrollTrigger);
-
-import "./style.css";
 
 document.addEventListener("DOMContentLoaded", async function () {
 	const header = document.querySelector(".header");
@@ -29,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // 加载其他图片
 	function loadImgs() {
 		const imagesCounts = 281;
-		for (let i = 1; i <= imagesCounts; i++) {
+		for (let i = 2; i <= imagesCounts; i++) {
 			let img = new Image();
 			img.src = `../public/16x9_281/standard/graded_4K_100_gm_50_1080_3-${i
 				.toString()
