@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 		ctx.scale(pixelRatio, pixelRatio);
 		// 初始化时首先加载一张防止长时间白屏
 		let img = new Image();
-		img.src = `/public/16x9_281/standard/graded_4K_100_gm_50_1080_3-002.jpg`;
+		img.src = `../public/16x9_281/standard/graded_4K_100_gm_50_1080_3-002.jpg`;
 		img.onload = () => {
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 		const imagesCounts = 281;
 		for (let i = 2; i <= imagesCounts; i++) {
 			let img = new Image();
-			img.src = `/public/16x9_281/standard/graded_4K_100_gm_50_1080_3-${i
+			img.src = `../public/16x9_281/standard/graded_4K_100_gm_50_1080_3-${i
 				.toString()
 				.padStart(3, "0")}.jpg`;
 			img.onload = () => {
